@@ -6,11 +6,11 @@ using CoreBackend.Database;
 
 namespace CoreBackend.Controllers
 {
+    [Route("api/[controller]")]
     public class TaskController : Controller
     {
         [HttpGet]
-        [Route("api/[controller]/GetTasks")]
-        public JsonResult GetTasks()
+        public JsonResult Get()
         {
             using (var db = new TaskContext())
             {
@@ -18,32 +18,70 @@ namespace CoreBackend.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("api/[controller]/GetTask/{id}")]
-        public JsonResult GetTask(int id)
+        [HttpGet("{id}")]
+        public JsonResult Get(int id)
         {
-            return Json("");
+            using (var db = new TaskContext())
+            {
+                return Json(db.Tasks.SingleOrDefault(x => x.Id == id));
+            }
         }
 
         [HttpPost]
-        [Route("api/[controller]/CreateTask")]
-        public JsonResult CreateTask()
+        public JsonResult Post([FromBody]Task task)
         {
-            return Json("");
+            try
+            {
+                using (var db = new TaskContext())
+                {
+                    db.Tasks.Add(task);
+                    db.SaveChanges();
+
+                    return Json("done.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(ex.Message);
+            }
         }
 
         [HttpPut]
-        [Route("api/[controller]/UpdateTask")]
-        public JsonResult UpdateTask()
+        public JsonResult Put([FromBody]Task task)
         {
-            return Json(""); 
+            try
+            {
+                using (var db = new TaskContext())
+                {
+                    db.Tasks.Update(task);
+                    db.SaveChanges();
+
+                    return Json("done.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(ex.Message);
+            }
         }
 
-        [HttpDelete]
-        [Route("api/[controller]/DeleteTask")]
-        public JsonResult DeleteTask()
+        [HttpDelete("{id}")]
+        public JsonResult Delete(int id)
         {
-            return Json("");
+            try
+            {
+                using (var db = new TaskContext())
+                {
+                    db.Tasks.Remove(db.Tasks.SingleOrDefault(x => x.Id == id));
+                    db.SaveChanges();
+
+                    return Json("done.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(ex.Message);
+            }
         }
 
         #region "Testing methods"

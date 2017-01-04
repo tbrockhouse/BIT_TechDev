@@ -1,5 +1,5 @@
---temp-output:C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\obj\Debug\netcoreapp1.0\
---out:C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\bin\Debug\netcoreapp1.0\CoreBackend.dll
+--temp-output:C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\obj\Debug\netcoreapp1.0\
+--out:C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\bin\Debug\netcoreapp1.0\CoreBackend.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -184,12 +184,12 @@
 --reference:C:\Users\tbrockhouse\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\tbrockhouse\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\tbrockhouse\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\obj\Debug\netcoreapp1.0\CoreBackenddotnet-compile.deps.json",CoreBackend.deps.json
-C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\Models.cs
-C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\Program.cs
-C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\Startup.cs
-C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\Controllers\TaskController.cs
-C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\Controllers\ValuesController.cs
-C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\Migrations\20161221154237_initial_migration.cs
-C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\Migrations\20161221154237_initial_migration.Designer.cs
-C:\Users\tbrockhouse\Documents\code samples\technical development projects\CoreBackend\Migrations\TaskContextModelSnapshot.cs
+--resource:"C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\obj\Debug\netcoreapp1.0\CoreBackenddotnet-compile.deps.json",CoreBackend.deps.json
+C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\Models.cs
+C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\Program.cs
+C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\Startup.cs
+C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\Controllers\TaskController.cs
+C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\Controllers\ValuesController.cs
+C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\Migrations\20161221154237_initial_migration.cs
+C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\Migrations\20161221154237_initial_migration.Designer.cs
+C:\Users\tbrockhouse\Documents\code samples\BIT_TechDev\src\API\CoreBackend\Migrations\TaskContextModelSnapshot.cs
