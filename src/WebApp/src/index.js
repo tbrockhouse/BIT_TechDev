@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import {App, TaskList} from './App';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <div>
+    <App />
+    <TaskList />
+  </div>
+  ,document.getElementById('root')
 );

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
   render() {
@@ -18,4 +19,34 @@ class App extends Component {
   }
 }
 
-export default App;
+class TaskList extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: []
+    };
+  }
+
+  componentDidMount() {
+    axios.get('http://api.fixer.io/latest')
+      .then(result => {
+        let data = []
+        for(var key in result.data.rates) {
+          data.push(result.data.rates[key]);
+        }
+        this.setState({ data: data })
+      });
+  }
+
+  render() {
+    return (
+          <div className="taskList">
+            {this.state.data}
+          </div>
+        );
+  }
+}
+
+export {App, TaskList};
