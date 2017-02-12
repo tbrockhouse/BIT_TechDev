@@ -1,0 +1,22 @@
+{
+  "name": "reactbasesetup",
+  "version": "1.0.0",
+  "description": "Test of competent person scheme website in ReactJS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --content-base dist/"
+  },
+  "author": "Tom Brockhouse",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
