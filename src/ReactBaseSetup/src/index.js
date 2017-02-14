@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 ReactDOM.render(
   <div>
-    <h1>CP Scheme</h1>
+    <h1>Base ReactJS Template</h1>
   </div>
   ,document.getElementById('root')
 );
